@@ -1,10 +1,13 @@
 <?php
 
+
+
+use App\Http\Controllers\ApiController;
 use App\Http\Controllers\API\ChallengeController;
 use App\Http\Controllers\API\TherapistController;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
-use App\Http\Controllers\ApiController;
+
 
 //JWT authentication routes
 Route::post('login', [ApiController::class, 'login']);
