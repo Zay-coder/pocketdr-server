@@ -23,6 +23,8 @@ Route::get('adult_therapists', [TherapistController::class, 'adult_therapists'])
 Route::get('teen_therapists', [TherapistController::class, 'teen_therapists']);
 Route::get('couple_therapists', [TherapistController::class, 'couple_therapists']);
 Route::get('get_chosen_therapist/{x}', [TherapistController::class, 'get_chosen_therapist']);
+Route::get('upvote/{x}', [TherapistController::class, 'upvote']);
+Route::get('downvote/{x}', [TherapistController::class, 'downvote']);
 
 
 

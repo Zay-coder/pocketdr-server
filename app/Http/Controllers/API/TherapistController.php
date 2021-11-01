@@ -55,8 +55,23 @@ class TherapistController extends Controller
         return $data;
 
     }
-    public function rating() {
+    public function upvote($therapist_id) {
+        $data = DB::table("therapists")
+            ->select("id", "upvotes")
+            ->where("id", "=", $therapist_id)
+            ->increment("upvotes", 1);
 
+        return $data;
+
+    }
+
+    public function downvote($therapist_id) {
+        $data = DB::table("therapists")
+            ->select("id", "downvotes")
+            ->where("id", "=", $therapist_id)
+            ->increment("downvotes", 1);
+
+        return $data;
 
     }
 
