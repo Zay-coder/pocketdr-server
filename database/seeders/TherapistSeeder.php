@@ -15,41 +15,117 @@ class TherapistSeeder extends Seeder
     public function run()
     {
         DB::table('therapists')->insert([
-            'first_name' => 'Magd',
-            'last_name' => 'Hamdoun',
-            'picture' => 'profile.jpeg',
-            'Speciality' => 'CBT Specialist',
-            'Years of Experience' => '20',
-            'Session Price' => '50',
-            'Bio' => 'I am Dr Madg Hamdoun, counsellor, psychotherapist and professor of counseling psychology,I am a specialist in CBT. through deep and compassionate cooperation with my diverse range of clients, i connect with broken hearts and broken self-images, inspiring clients to embark on a journey of rediscovery',
+            'first_name' => 'Charbel',
+            'last_name' => 'Bechara',
+            'picture' => 'https://randomuser.me/api/portraits/men/61.jpg ',
+            'speciality' => 'CBT Specialist',
+            'therapy_type' => 'Adult',
+            'yof' => '2',
+            'price' => '50',
+            'bio' => 'I am Dr Madg Hamdoun, counsellor, psychotherapist and professor of counseling psychology,I am a specialist in CBT. through deep and compassionate cooperation with my diverse range of clients, i connect with broken hearts and broken self-images, inspiring clients to embark on a journey of rediscovery',
+        ]);
+        DB::table('therapists')->insert([
+            'first_name' => 'Barathrum',
+            'last_name' => 'Dagher',
+            'picture' => 'https://randomuser.me/api/portraits/men/82.jpg',
+            'speciality' => 'Cognitive Behavior',
+            'therapy_type' => 'Adult',
+            'yof' => '5',
+            'price' => '70',
+            'bio' => 'I am an assistant lecturer of psychiatry at kast alainy, Cairo university. I received my degree working with patients with borderline personality disorder, i have been practicing psychiatry and psychotherapy for four years. i spent three years as a psychiatry resident in kasr alainy psychiatry and addiction hospital',
         ]);
         DB::table('therapists')->insert([
             'first_name' => 'Millia',
             'last_name' => 'Al charek',
-            'picture' => 'profile.jpeg',
-            'Speciality' => 'Assistant Lecturer of Psychiatry',
-            'Years of Experience' => '5',
-            'Session Price' => '70',
-            'Bio' => 'I am an assistant lecturer of psychiatry at kast alainy, Cairo university. I received my degree working with patients with borderline personality disorder, i have been practicing psychiatry and psychotherapy for four years. i spent three years as a psychiatry resident in kasr alainy psychiatry and addiction hospital',
+            'picture' => 'https://randomuser.me/api/portraits/women/75.jpg',
+            'speciality' => 'Lecturer of Psychiatry',
+            'therapy_type' => 'Adult',
+            'yof' => '6',
+            'price' => '70',
+            'bio' => 'I am an assistant lecturer of psychiatry at kast alainy, Cairo university. I received my degree working with patients with borderline personality disorder, i have been practicing psychiatry and psychotherapy for four years. i spent three years as a psychiatry resident in kasr alainy psychiatry and addiction hospital',
         ]);
         DB::table('therapists')->insert([
-            'first_name' => 'Miral',
-            'last_name' => 'Hanna',
-            'picture' => 'profile.jpeg',
-            'Speciality' => 'Counseling Psychologist',
-            'Years of Experience' => '6',
-            'Session Price' => '70',
-            'Bio' => "With a Master's of arts in counseling psychology from the American university in cairo, and training in cognitive behavior therapy from beck institute, i provide individual counseling to adolescents and adults. My first clinical internships were practiced at the behman hospital and al mashfa hospital where i was exposed to various clinical experiences. Later, I joined the psychology training center at AUC where i obtained more professional experience from counseling students,staff, faculty and alumni",
+            'first_name' => 'Ammar',
+            'last_name' => 'Olfat',
+            'picture' => 'https://randomuser.me/api/portraits/men/50.jpg',
+            'speciality' => 'Hallucinations and disorders',
+            'therapy_type' => 'Adult',
+            'yof' => '7',
+            'price' => '60',
+            'bio' => 'I am an assistant lecturer of psychiatry at kast alainy, Cairo university. I received my degree working with patients with borderline personality disorder, i have been practicing psychiatry and psychotherapy for four years. i spent three years as a psychiatry resident in kasr alainy psychiatry and addiction hospital',
+        ]);
+        DB::table('therapists')->insert([
+            'first_name' => 'Vanessa',
+            'last_name' => 'Khawand',
+            'picture' => 'https://randomuser.me/api/portraits/women/47.jpg',
+            'speciality' => 'Body language and positivity',
+            'therapy_type' => 'Adult',
+            'yof' => '15',
+            'price' => '70',
+            'bio' => 'I am an assistant lecturer of psychiatry at kast alainy, Cairo university. I received my degree working with patients with borderline personality disorder, i have been practicing psychiatry and psychotherapy for four years. i spent three years as a psychiatry resident in kasr alainy psychiatry and addiction hospital',
+        ]);
+        DB::table('therapists')->insert([
+            'first_name' => 'Kayla',
+            'last_name' => 'Madrid',
+            'picture' => 'https://randomuser.me/api/portraits/women/82.jpg',
+            'speciality' => 'Anger Management',
+            'therapy_type' => 'Adult',
+            'yof' => '4',
+            'price' => '80',
+            'bio' => 'I am an assistant lecturer of psychiatry at kast alainy, Cairo university. I received my degree working with patients with borderline personality disorder, i have been practicing psychiatry and psychotherapy for four years. i spent three years as a psychiatry resident in kasr alainy psychiatry and addiction hospital',
+        ]);
+        DB::table('therapists')->insert([
+            'first_name' => 'Fouad',
+            'last_name' => 'Yammine',
+            'picture' => 'https://randomuser.me/api/portraits/men/7.jpg',
+            'speciality' => 'Physical state management',
+            'therapy_type' => 'Adult',
+            'yof' => '9',
+            'price' => '40',
+            'bio' => 'I am an assistant lecturer of psychiatry at kast alainy, Cairo university. I received my degree working with patients with borderline personality disorder, i have been practicing psychiatry and psychotherapy for four years. i spent three years as a psychiatry resident in kasr alainy psychiatry and addiction hospital',
+        ]);
+        DB::table('therapists')->insert([
+            'first_name' => 'Samuel',
+            'last_name' => 'Jesser',
+            'picture' => 'https://randomuser.me/api/portraits/men/20.jpg',
+            'speciality' => 'Intimacy and Sex specialist',
+            'therapy_type' => 'Adult',
+            'yof' => '4',
+            'price' => '30',
+            'bio' => 'I am an assistant lecturer of psychiatry at kast alainy, Cairo university. I received my degree working with patients with borderline personality disorder, i have been practicing psychiatry and psychotherapy for four years. i spent three years as a psychiatry resident in kasr alainy psychiatry and addiction hospital',
         ]);
         DB::table('therapists')->insert([
             'first_name' => 'Osama',
-            'last_name' => 'Refaat',
-            'picture' => 'profile.jpeg',
-            'Speciality' => 'Professor of Psychiatry, Clinical Assessment',
-            'Years of Experience' => '24',
-            'Session Price' => '150',
-            'Bio' => "As a Professor of Psychiatry at faculty of medicine, Cairo University, I obtained my PhD in 2007 working on cognitive functions of the elderly, i have been working with elderly psychiatric patients for over fifteen years and have shared in several research projects and training programs in codgnitive disorders like dementia. i am now the deputy of the head of old age psychiatry, in Kasr al Ainy psychiatry hospital, and was previously the deputy director of cairo university center for aging sciences.",
+            'last_name' => 'Jaafar',
+            'picture' => 'https://randomuser.me/api/portraits/men/31.jpg',
+            'speciality' => 'Addiction and Limitations',
+            'therapy_type' => 'Adult',
+            'yof' => '1',
+            'price' => '20',
+            'bio' => 'I am an assistant lecturer of psychiatry at kast alainy, Cairo university. I received my degree working with patients with borderline personality disorder, i have been practicing psychiatry and psychotherapy for four years. i spent three years as a psychiatry resident in kasr alainy psychiatry and addiction hospital',
         ]);
+        DB::table('therapists')->insert([
+            'first_name' => 'Nathalia',
+            'last_name' => 'Lakis',
+            'picture' => 'https://randomuser.me/api/portraits/women/85.jpg',
+            'speciality' => 'Positive mental attitude',
+            'therapy_type' => 'Adult',
+            'yof' => '2',
+            'price' => '30',
+            'bio' => 'I am an assistant lecturer of psychiatry at kast alainy, Cairo university. I received my degree working with patients with borderline personality disorder, i have been practicing psychiatry and psychotherapy for four years. i spent three years as a psychiatry resident in kasr alainy psychiatry and addiction hospital',
+        ]);
+        DB::table('therapists')->insert([
+            'first_name' => 'Tatiana',
+            'last_name' => 'Maraai',
+            'picture' => 'https://randomuser.me/api/portraits/women/23.jpg',
+            'speciality' => 'Body acceptance and confidence',
+            'therapy_type' => 'Adult',
+            'yof' => '7',
+            'price' => '50',
+            'bio' => 'I am an assistant lecturer of psychiatry at kast alainy, Cairo university. I received my degree working with patients with borderline personality disorder, i have been practicing psychiatry and psychotherapy for four years. i spent three years as a psychiatry resident in kasr alainy psychiatry and addiction hospital',
+        ]);
+
+
 
 
     }

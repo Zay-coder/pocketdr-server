@@ -84,6 +84,7 @@ class ApiController extends Controller
         return response()->json([
             'success' => true,
             'token' => $token,
+            'user' => JWTAuth::user()
         ]);
     }
 

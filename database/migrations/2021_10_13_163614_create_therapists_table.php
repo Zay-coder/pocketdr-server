@@ -17,10 +17,10 @@ class CreateTherapistsTable extends Migration
             $table->id();
             $table->string('first_name');
             $table->string('last_name');
-            $table->string('Speciality');
-            $table->integer('Years of Experience');
-            $table->integer('Session Price');
-            $table->text('Bio');
+            $table->string('speciality');
+            $table->integer('yof');
+            $table->integer('price');
+            $table->text('bio');
             $table->timestamps();
         });
     }
