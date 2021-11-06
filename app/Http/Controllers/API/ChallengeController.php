@@ -13,6 +13,7 @@ class ChallengeController extends Controller
         return $data;
 
     }
+
     public function teen_challenges() {
         $data = Challenge::select('name')->whereBetween('id', [8,14])->get();
         return $data;

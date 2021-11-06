@@ -75,5 +75,17 @@ class TherapistController extends Controller
 
     }
 
+    public function get_available_dates($therapist_id) {
+
+        $data = DB::table("available_dates")
+            ->select("date_of_availability", "time_of_availability")
+            ->where("therapist_id", "=", $therapist_id)
+            ->get();
+
+        return $data;
+
+    }
+
+
 
 }

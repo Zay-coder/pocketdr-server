@@ -4,6 +4,7 @@ namespace Database\Seeders;
 
 use Illuminate\Database\Seeder;
 use Illuminate\Support\Facades\DB;
+use Carbon\Carbon;
 
 class TherapistSeeder extends Seeder
 {
@@ -14,6 +15,7 @@ class TherapistSeeder extends Seeder
      */
     public function run()
     {
+        //seeding therapists
         DB::table('therapists')->insert([
             'first_name' => 'Charbel',
             'last_name' => 'Bechara',
@@ -124,6 +126,950 @@ class TherapistSeeder extends Seeder
             'price' => '50',
             'bio' => 'I am an assistant lecturer of psychiatry at kast alainy, Cairo university. I received my degree working with patients with borderline personality disorder, i have been practicing psychiatry and psychotherapy for four years. i spent three years as a psychiatry resident in kasr alainy psychiatry and addiction hospital',
         ]);
+
+
+
+
+        //seeding available dates
+        DB::table('available_dates')->insert([
+            'therapist_id' => '1',
+            'date_of_availability' => Carbon::create('2021', '12', '01'),
+            'time_of_availability' => Carbon::createFromTime('08','00','00'),
+
+        ]);
+        DB::table('available_dates')->insert([
+            'therapist_id' => '1',
+            'date_of_availability' => Carbon::create('2021', '12', '01'),
+            'time_of_availability' => Carbon::createFromTime('09','00','00'),
+
+        ]);
+        DB::table('available_dates')->insert([
+            'therapist_id' => '1',
+            'date_of_availability' => Carbon::create('2021', '12', '01'),
+            'time_of_availability' => Carbon::createFromTime('10','00','00'),
+
+        ]);
+        DB::table('available_dates')->insert([
+            'therapist_id' => '1',
+            'date_of_availability' => Carbon::create('2021', '12', '01'),
+            'time_of_availability' => Carbon::createFromTime('11','00','00'),
+
+        ]);
+        DB::table('available_dates')->insert([
+            'therapist_id' => '1',
+            'date_of_availability' => Carbon::create('2021', '12', '01'),
+            'time_of_availability' => Carbon::createFromTime('12','00','00'),
+
+        ]);
+        DB::table('available_dates')->insert([
+            'therapist_id' => '1',
+            'date_of_availability' => Carbon::create('2021', '12', '01'),
+            'time_of_availability' => Carbon::createFromTime('13','00','00'),
+
+        ]);
+        DB::table('available_dates')->insert([
+            'therapist_id' => '1',
+            'date_of_availability' => Carbon::create('2021', '12', '01'),
+            'time_of_availability' => Carbon::createFromTime('14','00','00'),
+
+        ]);
+        DB::table('available_dates')->insert([
+            'therapist_id' => '1',
+            'date_of_availability' => Carbon::create('2021', '12', '01'),
+            'time_of_availability' => Carbon::createFromTime('15','00','00'),
+
+        ]);
+        DB::table('available_dates')->insert([
+            'therapist_id' => '1',
+            'date_of_availability' => Carbon::create('2021', '12', '01'),
+            'time_of_availability' => Carbon::createFromTime('16','00','00'),
+
+        ]);
+        DB::table('available_dates')->insert([
+            'therapist_id' => '1',
+            'date_of_availability' => Carbon::create('2021', '12', '01'),
+            'time_of_availability' => Carbon::createFromTime('17','00','00'),
+
+        ]);
+        DB::table('available_dates')->insert([
+            'therapist_id' => '1',
+            'date_of_availability' => Carbon::create('2021', '12', '01'),
+            'time_of_availability' => Carbon::createFromTime('18','00','00'),
+
+        ]);
+        DB::table('available_dates')->insert([
+            'therapist_id' => '1',
+            'date_of_availability' => Carbon::create('2021', '12', '01'),
+            'time_of_availability' => Carbon::createFromTime('19','00','00'),
+
+        ]);
+        DB::table('available_dates')->insert([
+            'therapist_id' => '1',
+            'date_of_availability' => Carbon::create('2021', '12', '01'),
+            'time_of_availability' => Carbon::createFromTime('20','00','00'),
+
+        ]);
+        DB::table('available_dates')->insert([
+            'therapist_id' => '1',
+            'date_of_availability' => Carbon::create('2021', '12', '01'),
+            'time_of_availability' => Carbon::createFromTime('08','00','00'),
+
+        ]);
+        DB::table('available_dates')->insert([
+            'therapist_id' => '1',
+            'date_of_availability' => Carbon::create('2021', '12', '01'),
+            'time_of_availability' => Carbon::createFromTime('09','00','00'),
+
+        ]);
+        DB::table('available_dates')->insert([
+            'therapist_id' => '1',
+            'date_of_availability' => Carbon::create('2021', '12', '01'),
+            'time_of_availability' => Carbon::createFromTime('10','00','00'),
+
+        ]);
+        DB::table('available_dates')->insert([
+            'therapist_id' => '1',
+            'date_of_availability' => Carbon::create('2021', '12', '01'),
+            'time_of_availability' => Carbon::createFromTime('11','00','00'),
+
+        ]);
+        DB::table('available_dates')->insert([
+            'therapist_id' => '1',
+            'date_of_availability' => Carbon::create('2021', '12', '01'),
+            'time_of_availability' => Carbon::createFromTime('12','00','00'),
+
+        ]);
+        DB::table('available_dates')->insert([
+            'therapist_id' => '1',
+            'date_of_availability' => Carbon::create('2021', '12', '01'),
+            'time_of_availability' => Carbon::createFromTime('13','00','00'),
+
+        ]);
+        DB::table('available_dates')->insert([
+            'therapist_id' => '1',
+            'date_of_availability' => Carbon::create('2021', '12', '01'),
+            'time_of_availability' => Carbon::createFromTime('14','00','00'),
+
+        ]);
+        DB::table('available_dates')->insert([
+            'therapist_id' => '1',
+            'date_of_availability' => Carbon::create('2021', '12', '01'),
+            'time_of_availability' => Carbon::createFromTime('15','00','00'),
+
+        ]);
+        DB::table('available_dates')->insert([
+            'therapist_id' => '1',
+            'date_of_availability' => Carbon::create('2021', '12', '01'),
+            'time_of_availability' => Carbon::createFromTime('16','00','00'),
+
+        ]);
+        DB::table('available_dates')->insert([
+            'therapist_id' => '1',
+            'date_of_availability' => Carbon::create('2021', '12', '01'),
+            'time_of_availability' => Carbon::createFromTime('17','00','00'),
+
+        ]);
+        DB::table('available_dates')->insert([
+            'therapist_id' => '1',
+            'date_of_availability' => Carbon::create('2021', '12', '01'),
+            'time_of_availability' => Carbon::createFromTime('18','00','00'),
+
+        ]);
+        DB::table('available_dates')->insert([
+            'therapist_id' => '1',
+            'date_of_availability' => Carbon::create('2021', '12', '01'),
+            'time_of_availability' => Carbon::createFromTime('19','00','00'),
+
+        ]);
+        DB::table('available_dates')->insert([
+            'therapist_id' => '1',
+            'date_of_availability' => Carbon::create('2021', '12', '01'),
+            'time_of_availability' => Carbon::createFromTime('20','00','00'),
+
+        ]);
+        DB::table('available_dates')->insert([
+            'therapist_id' => '2',
+            'date_of_availability' => Carbon::create('2021', '12', '01'),
+            'time_of_availability' => Carbon::createFromTime('08','00','00'),
+
+        ]);
+        DB::table('available_dates')->insert([
+            'therapist_id' => '2',
+            'date_of_availability' => Carbon::create('2021', '12', '01'),
+            'time_of_availability' => Carbon::createFromTime('09','00','00'),
+
+        ]);
+        DB::table('available_dates')->insert([
+            'therapist_id' => '2',
+            'date_of_availability' => Carbon::create('2021', '12', '01'),
+            'time_of_availability' => Carbon::createFromTime('10','00','00'),
+
+        ]);
+        DB::table('available_dates')->insert([
+            'therapist_id' => '2',
+            'date_of_availability' => Carbon::create('2021', '12', '01'),
+            'time_of_availability' => Carbon::createFromTime('11','00','00'),
+
+        ]);
+        DB::table('available_dates')->insert([
+            'therapist_id' => '2',
+            'date_of_availability' => Carbon::create('2021', '12', '01'),
+            'time_of_availability' => Carbon::createFromTime('12','00','00'),
+
+        ]);
+        DB::table('available_dates')->insert([
+            'therapist_id' => '2',
+            'date_of_availability' => Carbon::create('2021', '12', '01'),
+            'time_of_availability' => Carbon::createFromTime('13','00','00'),
+
+        ]);
+        DB::table('available_dates')->insert([
+            'therapist_id' => '2',
+            'date_of_availability' => Carbon::create('2021', '12', '01'),
+            'time_of_availability' => Carbon::createFromTime('14','00','00'),
+
+        ]);
+        DB::table('available_dates')->insert([
+            'therapist_id' => '2',
+            'date_of_availability' => Carbon::create('2021', '12', '01'),
+            'time_of_availability' => Carbon::createFromTime('15','00','00'),
+
+        ]);
+        DB::table('available_dates')->insert([
+            'therapist_id' => '2',
+            'date_of_availability' => Carbon::create('2021', '12', '01'),
+            'time_of_availability' => Carbon::createFromTime('16','00','00'),
+
+        ]);
+        DB::table('available_dates')->insert([
+            'therapist_id' => '2',
+            'date_of_availability' => Carbon::create('2021', '12', '01'),
+            'time_of_availability' => Carbon::createFromTime('17','00','00'),
+
+        ]);
+        DB::table('available_dates')->insert([
+            'therapist_id' => '2',
+            'date_of_availability' => Carbon::create('2021', '12', '01'),
+            'time_of_availability' => Carbon::createFromTime('18','00','00'),
+
+        ]);
+        DB::table('available_dates')->insert([
+            'therapist_id' => '2',
+            'date_of_availability' => Carbon::create('2021', '12', '01'),
+            'time_of_availability' => Carbon::createFromTime('19','00','00'),
+
+        ]);
+        DB::table('available_dates')->insert([
+            'therapist_id' => '2',
+            'date_of_availability' => Carbon::create('2021', '12', '01'),
+            'time_of_availability' => Carbon::createFromTime('20','00','00'),
+
+        ]);
+        DB::table('available_dates')->insert([
+            'therapist_id' => '3',
+            'date_of_availability' => Carbon::create('2021', '12', '01'),
+            'time_of_availability' => Carbon::createFromTime('08','00','00'),
+
+        ]);
+        DB::table('available_dates')->insert([
+            'therapist_id' => '3',
+            'date_of_availability' => Carbon::create('2021', '12', '01'),
+            'time_of_availability' => Carbon::createFromTime('09','00','00'),
+
+        ]);
+        DB::table('available_dates')->insert([
+            'therapist_id' => '3',
+            'date_of_availability' => Carbon::create('2021', '12', '01'),
+            'time_of_availability' => Carbon::createFromTime('10','00','00'),
+
+        ]);
+        DB::table('available_dates')->insert([
+            'therapist_id' => '3',
+            'date_of_availability' => Carbon::create('2021', '12', '01'),
+            'time_of_availability' => Carbon::createFromTime('11','00','00'),
+
+        ]);
+        DB::table('available_dates')->insert([
+            'therapist_id' => '3',
+            'date_of_availability' => Carbon::create('2021', '12', '01'),
+            'time_of_availability' => Carbon::createFromTime('12','00','00'),
+
+        ]);
+        DB::table('available_dates')->insert([
+            'therapist_id' => '3',
+            'date_of_availability' => Carbon::create('2021', '12', '01'),
+            'time_of_availability' => Carbon::createFromTime('13','00','00'),
+
+        ]);
+        DB::table('available_dates')->insert([
+            'therapist_id' => '3',
+            'date_of_availability' => Carbon::create('2021', '12', '01'),
+            'time_of_availability' => Carbon::createFromTime('14','00','00'),
+
+        ]);
+        DB::table('available_dates')->insert([
+            'therapist_id' => '3',
+            'date_of_availability' => Carbon::create('2021', '12', '01'),
+            'time_of_availability' => Carbon::createFromTime('15','00','00'),
+
+        ]);
+        DB::table('available_dates')->insert([
+            'therapist_id' => '3',
+            'date_of_availability' => Carbon::create('2021', '12', '01'),
+            'time_of_availability' => Carbon::createFromTime('16','00','00'),
+
+        ]);
+        DB::table('available_dates')->insert([
+            'therapist_id' => '3',
+            'date_of_availability' => Carbon::create('2021', '12', '01'),
+            'time_of_availability' => Carbon::createFromTime('17','00','00'),
+
+        ]);
+        DB::table('available_dates')->insert([
+            'therapist_id' => '3',
+            'date_of_availability' => Carbon::create('2021', '12', '01'),
+            'time_of_availability' => Carbon::createFromTime('18','00','00'),
+
+        ]);
+        DB::table('available_dates')->insert([
+            'therapist_id' => '3',
+            'date_of_availability' => Carbon::create('2021', '12', '01'),
+            'time_of_availability' => Carbon::createFromTime('19','00','00'),
+
+        ]);
+        DB::table('available_dates')->insert([
+            'therapist_id' => '3',
+            'date_of_availability' => Carbon::create('2021', '12', '01'),
+            'time_of_availability' => Carbon::createFromTime('20','00','00'),
+
+        ]);
+        DB::table('available_dates')->insert([
+            'therapist_id' => '4',
+            'date_of_availability' => Carbon::create('2021', '12', '01'),
+            'time_of_availability' => Carbon::createFromTime('08','00','00'),
+
+        ]);
+        DB::table('available_dates')->insert([
+            'therapist_id' => '4',
+            'date_of_availability' => Carbon::create('2021', '12', '01'),
+            'time_of_availability' => Carbon::createFromTime('09','00','00'),
+
+        ]);
+        DB::table('available_dates')->insert([
+            'therapist_id' => '4',
+            'date_of_availability' => Carbon::create('2021', '12', '01'),
+            'time_of_availability' => Carbon::createFromTime('10','00','00'),
+
+        ]);
+        DB::table('available_dates')->insert([
+            'therapist_id' => '4',
+            'date_of_availability' => Carbon::create('2021', '12', '01'),
+            'time_of_availability' => Carbon::createFromTime('11','00','00'),
+
+        ]);
+        DB::table('available_dates')->insert([
+            'therapist_id' => '4',
+            'date_of_availability' => Carbon::create('2021', '12', '01'),
+            'time_of_availability' => Carbon::createFromTime('12','00','00'),
+
+        ]);
+        DB::table('available_dates')->insert([
+            'therapist_id' => '4',
+            'date_of_availability' => Carbon::create('2021', '12', '01'),
+            'time_of_availability' => Carbon::createFromTime('13','00','00'),
+
+        ]);
+        DB::table('available_dates')->insert([
+            'therapist_id' => '4',
+            'date_of_availability' => Carbon::create('2021', '12', '01'),
+            'time_of_availability' => Carbon::createFromTime('14','00','00'),
+
+        ]);
+        DB::table('available_dates')->insert([
+            'therapist_id' => '4',
+            'date_of_availability' => Carbon::create('2021', '12', '01'),
+            'time_of_availability' => Carbon::createFromTime('15','00','00'),
+
+        ]);
+        DB::table('available_dates')->insert([
+            'therapist_id' => '4',
+            'date_of_availability' => Carbon::create('2021', '12', '01'),
+            'time_of_availability' => Carbon::createFromTime('16','00','00'),
+
+        ]);
+        DB::table('available_dates')->insert([
+            'therapist_id' => '4',
+            'date_of_availability' => Carbon::create('2021', '12', '01'),
+            'time_of_availability' => Carbon::createFromTime('17','00','00'),
+
+        ]);
+        DB::table('available_dates')->insert([
+            'therapist_id' => '4',
+            'date_of_availability' => Carbon::create('2021', '12', '01'),
+            'time_of_availability' => Carbon::createFromTime('18','00','00'),
+
+        ]);
+        DB::table('available_dates')->insert([
+            'therapist_id' => '4',
+            'date_of_availability' => Carbon::create('2021', '12', '01'),
+            'time_of_availability' => Carbon::createFromTime('19','00','00'),
+
+        ]);
+        DB::table('available_dates')->insert([
+            'therapist_id' => '4',
+            'date_of_availability' => Carbon::create('2021', '12', '01'),
+            'time_of_availability' => Carbon::createFromTime('20','00','00'),
+
+        ]);
+        DB::table('available_dates')->insert([
+            'therapist_id' => '5',
+            'date_of_availability' => Carbon::create('2021', '12', '01'),
+            'time_of_availability' => Carbon::createFromTime('08','00','00'),
+
+        ]);
+        DB::table('available_dates')->insert([
+            'therapist_id' => '5',
+            'date_of_availability' => Carbon::create('2021', '12', '01'),
+            'time_of_availability' => Carbon::createFromTime('09','00','00'),
+
+        ]);
+        DB::table('available_dates')->insert([
+            'therapist_id' => '5',
+            'date_of_availability' => Carbon::create('2021', '12', '01'),
+            'time_of_availability' => Carbon::createFromTime('10','00','00'),
+
+        ]);
+        DB::table('available_dates')->insert([
+            'therapist_id' => '5',
+            'date_of_availability' => Carbon::create('2021', '12', '01'),
+            'time_of_availability' => Carbon::createFromTime('11','00','00'),
+
+        ]);
+        DB::table('available_dates')->insert([
+            'therapist_id' => '5',
+            'date_of_availability' => Carbon::create('2021', '12', '01'),
+            'time_of_availability' => Carbon::createFromTime('12','00','00'),
+
+        ]);
+        DB::table('available_dates')->insert([
+            'therapist_id' => '5',
+            'date_of_availability' => Carbon::create('2021', '12', '01'),
+            'time_of_availability' => Carbon::createFromTime('13','00','00'),
+
+        ]);
+        DB::table('available_dates')->insert([
+            'therapist_id' => '5',
+            'date_of_availability' => Carbon::create('2021', '12', '01'),
+            'time_of_availability' => Carbon::createFromTime('14','00','00'),
+
+        ]);
+        DB::table('available_dates')->insert([
+            'therapist_id' => '5',
+            'date_of_availability' => Carbon::create('2021', '12', '01'),
+            'time_of_availability' => Carbon::createFromTime('15','00','00'),
+
+        ]);
+        DB::table('available_dates')->insert([
+            'therapist_id' => '5',
+            'date_of_availability' => Carbon::create('2021', '12', '01'),
+            'time_of_availability' => Carbon::createFromTime('16','00','00'),
+
+        ]);
+        DB::table('available_dates')->insert([
+            'therapist_id' => '5',
+            'date_of_availability' => Carbon::create('2021', '12', '01'),
+            'time_of_availability' => Carbon::createFromTime('17','00','00'),
+
+        ]);
+        DB::table('available_dates')->insert([
+            'therapist_id' => '5',
+            'date_of_availability' => Carbon::create('2021', '12', '01'),
+            'time_of_availability' => Carbon::createFromTime('18','00','00'),
+
+        ]);
+        DB::table('available_dates')->insert([
+            'therapist_id' => '5',
+            'date_of_availability' => Carbon::create('2021', '12', '01'),
+            'time_of_availability' => Carbon::createFromTime('19','00','00'),
+
+        ]);
+        DB::table('available_dates')->insert([
+            'therapist_id' => '5',
+            'date_of_availability' => Carbon::create('2021', '12', '01'),
+            'time_of_availability' => Carbon::createFromTime('20','00','00'),
+
+        ]);
+        DB::table('available_dates')->insert([
+            'therapist_id' => '6',
+            'date_of_availability' => Carbon::create('2021', '12', '01'),
+            'time_of_availability' => Carbon::createFromTime('08','00','00'),
+
+        ]);
+        DB::table('available_dates')->insert([
+            'therapist_id' => '6',
+            'date_of_availability' => Carbon::create('2021', '12', '01'),
+            'time_of_availability' => Carbon::createFromTime('09','00','00'),
+
+        ]);
+        DB::table('available_dates')->insert([
+            'therapist_id' => '6',
+            'date_of_availability' => Carbon::create('2021', '12', '01'),
+            'time_of_availability' => Carbon::createFromTime('10','00','00'),
+
+        ]);
+        DB::table('available_dates')->insert([
+            'therapist_id' => '6',
+            'date_of_availability' => Carbon::create('2021', '12', '01'),
+            'time_of_availability' => Carbon::createFromTime('11','00','00'),
+
+        ]);
+        DB::table('available_dates')->insert([
+            'therapist_id' => '6',
+            'date_of_availability' => Carbon::create('2021', '12', '01'),
+            'time_of_availability' => Carbon::createFromTime('12','00','00'),
+
+        ]);
+        DB::table('available_dates')->insert([
+            'therapist_id' => '6',
+            'date_of_availability' => Carbon::create('2021', '12', '01'),
+            'time_of_availability' => Carbon::createFromTime('13','00','00'),
+
+        ]);
+        DB::table('available_dates')->insert([
+            'therapist_id' => '6',
+            'date_of_availability' => Carbon::create('2021', '12', '01'),
+            'time_of_availability' => Carbon::createFromTime('14','00','00'),
+
+        ]);
+        DB::table('available_dates')->insert([
+            'therapist_id' => '6',
+            'date_of_availability' => Carbon::create('2021', '12', '01'),
+            'time_of_availability' => Carbon::createFromTime('15','00','00'),
+
+        ]);
+        DB::table('available_dates')->insert([
+            'therapist_id' => '6',
+            'date_of_availability' => Carbon::create('2021', '12', '01'),
+            'time_of_availability' => Carbon::createFromTime('16','00','00'),
+
+        ]);
+        DB::table('available_dates')->insert([
+            'therapist_id' => '6',
+            'date_of_availability' => Carbon::create('2021', '12', '01'),
+            'time_of_availability' => Carbon::createFromTime('17','00','00'),
+
+        ]);
+        DB::table('available_dates')->insert([
+            'therapist_id' => '6',
+            'date_of_availability' => Carbon::create('2021', '12', '01'),
+            'time_of_availability' => Carbon::createFromTime('18','00','00'),
+
+        ]);
+        DB::table('available_dates')->insert([
+            'therapist_id' => '6',
+            'date_of_availability' => Carbon::create('2021', '12', '01'),
+            'time_of_availability' => Carbon::createFromTime('19','00','00'),
+
+        ]);
+        DB::table('available_dates')->insert([
+            'therapist_id' => '6',
+            'date_of_availability' => Carbon::create('2021', '12', '01'),
+            'time_of_availability' => Carbon::createFromTime('20','00','00'),
+
+        ]);
+        DB::table('available_dates')->insert([
+            'therapist_id' => '7',
+            'date_of_availability' => Carbon::create('2021', '12', '01'),
+            'time_of_availability' => Carbon::createFromTime('08','00','00'),
+
+        ]);
+        DB::table('available_dates')->insert([
+            'therapist_id' => '7',
+            'date_of_availability' => Carbon::create('2021', '12', '01'),
+            'time_of_availability' => Carbon::createFromTime('09','00','00'),
+
+        ]);
+        DB::table('available_dates')->insert([
+            'therapist_id' => '7',
+            'date_of_availability' => Carbon::create('2021', '12', '01'),
+            'time_of_availability' => Carbon::createFromTime('10','00','00'),
+
+        ]);
+        DB::table('available_dates')->insert([
+            'therapist_id' => '7',
+            'date_of_availability' => Carbon::create('2021', '12', '01'),
+            'time_of_availability' => Carbon::createFromTime('11','00','00'),
+
+        ]);
+        DB::table('available_dates')->insert([
+            'therapist_id' => '7',
+            'date_of_availability' => Carbon::create('2021', '12', '01'),
+            'time_of_availability' => Carbon::createFromTime('12','00','00'),
+
+        ]);
+        DB::table('available_dates')->insert([
+            'therapist_id' => '7',
+            'date_of_availability' => Carbon::create('2021', '12', '01'),
+            'time_of_availability' => Carbon::createFromTime('13','00','00'),
+
+        ]);
+        DB::table('available_dates')->insert([
+            'therapist_id' => '7',
+            'date_of_availability' => Carbon::create('2021', '12', '01'),
+            'time_of_availability' => Carbon::createFromTime('14','00','00'),
+
+        ]);
+        DB::table('available_dates')->insert([
+            'therapist_id' => '7',
+            'date_of_availability' => Carbon::create('2021', '12', '01'),
+            'time_of_availability' => Carbon::createFromTime('15','00','00'),
+
+        ]);
+        DB::table('available_dates')->insert([
+            'therapist_id' => '7',
+            'date_of_availability' => Carbon::create('2021', '12', '01'),
+            'time_of_availability' => Carbon::createFromTime('16','00','00'),
+
+        ]);
+        DB::table('available_dates')->insert([
+            'therapist_id' => '7',
+            'date_of_availability' => Carbon::create('2021', '12', '01'),
+            'time_of_availability' => Carbon::createFromTime('17','00','00'),
+
+        ]);
+        DB::table('available_dates')->insert([
+            'therapist_id' => '7',
+            'date_of_availability' => Carbon::create('2021', '12', '01'),
+            'time_of_availability' => Carbon::createFromTime('18','00','00'),
+
+        ]);
+        DB::table('available_dates')->insert([
+            'therapist_id' => '7',
+            'date_of_availability' => Carbon::create('2021', '12', '01'),
+            'time_of_availability' => Carbon::createFromTime('19','00','00'),
+
+        ]);
+        DB::table('available_dates')->insert([
+            'therapist_id' => '7',
+            'date_of_availability' => Carbon::create('2021', '12', '01'),
+            'time_of_availability' => Carbon::createFromTime('20','00','00'),
+
+        ]);
+        DB::table('available_dates')->insert([
+            'therapist_id' => '8',
+            'date_of_availability' => Carbon::create('2021', '12', '01'),
+            'time_of_availability' => Carbon::createFromTime('08','00','00'),
+
+        ]);
+        DB::table('available_dates')->insert([
+            'therapist_id' => '8',
+            'date_of_availability' => Carbon::create('2021', '12', '01'),
+            'time_of_availability' => Carbon::createFromTime('09','00','00'),
+
+        ]);
+        DB::table('available_dates')->insert([
+            'therapist_id' => '8',
+            'date_of_availability' => Carbon::create('2021', '12', '01'),
+            'time_of_availability' => Carbon::createFromTime('10','00','00'),
+
+        ]);
+        DB::table('available_dates')->insert([
+            'therapist_id' => '8',
+            'date_of_availability' => Carbon::create('2021', '12', '01'),
+            'time_of_availability' => Carbon::createFromTime('11','00','00'),
+
+        ]);
+        DB::table('available_dates')->insert([
+            'therapist_id' => '8',
+            'date_of_availability' => Carbon::create('2021', '12', '01'),
+            'time_of_availability' => Carbon::createFromTime('12','00','00'),
+
+        ]);
+        DB::table('available_dates')->insert([
+            'therapist_id' => '8',
+            'date_of_availability' => Carbon::create('2021', '12', '01'),
+            'time_of_availability' => Carbon::createFromTime('13','00','00'),
+
+        ]);
+        DB::table('available_dates')->insert([
+            'therapist_id' => '8',
+            'date_of_availability' => Carbon::create('2021', '12', '01'),
+            'time_of_availability' => Carbon::createFromTime('14','00','00'),
+
+        ]);
+        DB::table('available_dates')->insert([
+            'therapist_id' => '8',
+            'date_of_availability' => Carbon::create('2021', '12', '01'),
+            'time_of_availability' => Carbon::createFromTime('15','00','00'),
+
+        ]);
+        DB::table('available_dates')->insert([
+            'therapist_id' => '8',
+            'date_of_availability' => Carbon::create('2021', '12', '01'),
+            'time_of_availability' => Carbon::createFromTime('16','00','00'),
+
+        ]);
+        DB::table('available_dates')->insert([
+            'therapist_id' => '8',
+            'date_of_availability' => Carbon::create('2021', '12', '01'),
+            'time_of_availability' => Carbon::createFromTime('17','00','00'),
+
+        ]);
+        DB::table('available_dates')->insert([
+            'therapist_id' => '8',
+            'date_of_availability' => Carbon::create('2021', '12', '01'),
+            'time_of_availability' => Carbon::createFromTime('18','00','00'),
+
+        ]);
+        DB::table('available_dates')->insert([
+            'therapist_id' => '8',
+            'date_of_availability' => Carbon::create('2021', '12', '01'),
+            'time_of_availability' => Carbon::createFromTime('19','00','00'),
+
+        ]);
+        DB::table('available_dates')->insert([
+            'therapist_id' => '8',
+            'date_of_availability' => Carbon::create('2021', '12', '01'),
+            'time_of_availability' => Carbon::createFromTime('20','00','00'),
+
+        ]);
+        DB::table('available_dates')->insert([
+            'therapist_id' => '9',
+            'date_of_availability' => Carbon::create('2021', '12', '01'),
+            'time_of_availability' => Carbon::createFromTime('08','00','00'),
+
+        ]);
+        DB::table('available_dates')->insert([
+            'therapist_id' => '9',
+            'date_of_availability' => Carbon::create('2021', '12', '01'),
+            'time_of_availability' => Carbon::createFromTime('09','00','00'),
+
+        ]);
+        DB::table('available_dates')->insert([
+            'therapist_id' => '9',
+            'date_of_availability' => Carbon::create('2021', '12', '01'),
+            'time_of_availability' => Carbon::createFromTime('10','00','00'),
+
+        ]);
+        DB::table('available_dates')->insert([
+            'therapist_id' => '9',
+            'date_of_availability' => Carbon::create('2021', '12', '01'),
+            'time_of_availability' => Carbon::createFromTime('11','00','00'),
+
+        ]);
+        DB::table('available_dates')->insert([
+            'therapist_id' => '9',
+            'date_of_availability' => Carbon::create('2021', '12', '01'),
+            'time_of_availability' => Carbon::createFromTime('12','00','00'),
+
+        ]);
+        DB::table('available_dates')->insert([
+            'therapist_id' => '9',
+            'date_of_availability' => Carbon::create('2021', '12', '01'),
+            'time_of_availability' => Carbon::createFromTime('13','00','00'),
+
+        ]);
+        DB::table('available_dates')->insert([
+            'therapist_id' => '9',
+            'date_of_availability' => Carbon::create('2021', '12', '01'),
+            'time_of_availability' => Carbon::createFromTime('14','00','00'),
+
+        ]);
+        DB::table('available_dates')->insert([
+            'therapist_id' => '9',
+            'date_of_availability' => Carbon::create('2021', '12', '01'),
+            'time_of_availability' => Carbon::createFromTime('15','00','00'),
+
+        ]);
+        DB::table('available_dates')->insert([
+            'therapist_id' => '9',
+            'date_of_availability' => Carbon::create('2021', '12', '01'),
+            'time_of_availability' => Carbon::createFromTime('16','00','00'),
+
+        ]);
+        DB::table('available_dates')->insert([
+            'therapist_id' => '9',
+            'date_of_availability' => Carbon::create('2021', '12', '01'),
+            'time_of_availability' => Carbon::createFromTime('17','00','00'),
+
+        ]);
+        DB::table('available_dates')->insert([
+            'therapist_id' => '9',
+            'date_of_availability' => Carbon::create('2021', '12', '01'),
+            'time_of_availability' => Carbon::createFromTime('18','00','00'),
+
+        ]);
+        DB::table('available_dates')->insert([
+            'therapist_id' => '9',
+            'date_of_availability' => Carbon::create('2021', '12', '01'),
+            'time_of_availability' => Carbon::createFromTime('19','00','00'),
+
+        ]);
+        DB::table('available_dates')->insert([
+            'therapist_id' => '9',
+            'date_of_availability' => Carbon::create('2021', '12', '01'),
+            'time_of_availability' => Carbon::createFromTime('20','00','00'),
+
+        ]);
+        DB::table('available_dates')->insert([
+            'therapist_id' => '10',
+            'date_of_availability' => Carbon::create('2021', '12', '01'),
+            'time_of_availability' => Carbon::createFromTime('08','00','00'),
+
+        ]);
+        DB::table('available_dates')->insert([
+            'therapist_id' => '10',
+            'date_of_availability' => Carbon::create('2021', '12', '01'),
+            'time_of_availability' => Carbon::createFromTime('09','00','00'),
+
+        ]);
+        DB::table('available_dates')->insert([
+            'therapist_id' => '10',
+            'date_of_availability' => Carbon::create('2021', '12', '01'),
+            'time_of_availability' => Carbon::createFromTime('10','00','00'),
+
+        ]);
+        DB::table('available_dates')->insert([
+            'therapist_id' => '10',
+            'date_of_availability' => Carbon::create('2021', '12', '01'),
+            'time_of_availability' => Carbon::createFromTime('11','00','00'),
+
+        ]);
+        DB::table('available_dates')->insert([
+            'therapist_id' => '10',
+            'date_of_availability' => Carbon::create('2021', '12', '01'),
+            'time_of_availability' => Carbon::createFromTime('12','00','00'),
+
+        ]);
+        DB::table('available_dates')->insert([
+            'therapist_id' => '10',
+            'date_of_availability' => Carbon::create('2021', '12', '01'),
+            'time_of_availability' => Carbon::createFromTime('13','00','00'),
+
+        ]);
+        DB::table('available_dates')->insert([
+            'therapist_id' => '10',
+            'date_of_availability' => Carbon::create('2021', '12', '01'),
+            'time_of_availability' => Carbon::createFromTime('14','00','00'),
+
+        ]);
+        DB::table('available_dates')->insert([
+            'therapist_id' => '10',
+            'date_of_availability' => Carbon::create('2021', '12', '01'),
+            'time_of_availability' => Carbon::createFromTime('15','00','00'),
+
+        ]);
+        DB::table('available_dates')->insert([
+            'therapist_id' => '10',
+            'date_of_availability' => Carbon::create('2021', '12', '01'),
+            'time_of_availability' => Carbon::createFromTime('16','00','00'),
+
+        ]);
+        DB::table('available_dates')->insert([
+            'therapist_id' => '10',
+            'date_of_availability' => Carbon::create('2021', '12', '01'),
+            'time_of_availability' => Carbon::createFromTime('17','00','00'),
+
+        ]);
+        DB::table('available_dates')->insert([
+            'therapist_id' => '10',
+            'date_of_availability' => Carbon::create('2021', '12', '01'),
+            'time_of_availability' => Carbon::createFromTime('18','00','00'),
+
+        ]);
+        DB::table('available_dates')->insert([
+            'therapist_id' => '10',
+            'date_of_availability' => Carbon::create('2021', '12', '01'),
+            'time_of_availability' => Carbon::createFromTime('19','00','00'),
+
+        ]);
+        DB::table('available_dates')->insert([
+            'therapist_id' => '10',
+            'date_of_availability' => Carbon::create('2021', '12', '01'),
+            'time_of_availability' => Carbon::createFromTime('20','00','00'),
+
+        ]);
+        DB::table('available_dates')->insert([
+            'therapist_id' => '11',
+            'date_of_availability' => Carbon::create('2021', '12', '01'),
+            'time_of_availability' => Carbon::createFromTime('08','00','00'),
+
+        ]);
+        DB::table('available_dates')->insert([
+            'therapist_id' => '11',
+            'date_of_availability' => Carbon::create('2021', '12', '01'),
+            'time_of_availability' => Carbon::createFromTime('09','00','00'),
+
+        ]);
+        DB::table('available_dates')->insert([
+            'therapist_id' => '11',
+            'date_of_availability' => Carbon::create('2021', '12', '01'),
+            'time_of_availability' => Carbon::createFromTime('10','00','00'),
+
+        ]);
+        DB::table('available_dates')->insert([
+            'therapist_id' => '11',
+            'date_of_availability' => Carbon::create('2021', '12', '01'),
+            'time_of_availability' => Carbon::createFromTime('11','00','00'),
+
+        ]);
+        DB::table('available_dates')->insert([
+            'therapist_id' => '11',
+            'date_of_availability' => Carbon::create('2021', '12', '01'),
+            'time_of_availability' => Carbon::createFromTime('12','00','00'),
+
+        ]);
+        DB::table('available_dates')->insert([
+            'therapist_id' => '11',
+            'date_of_availability' => Carbon::create('2021', '12', '01'),
+            'time_of_availability' => Carbon::createFromTime('13','00','00'),
+
+        ]);
+        DB::table('available_dates')->insert([
+            'therapist_id' => '1',
+            'date_of_availability' => Carbon::create('2021', '12', '01'),
+            'time_of_availability' => Carbon::createFromTime('14','00','00'),
+
+        ]);
+        DB::table('available_dates')->insert([
+            'therapist_id' => '11',
+            'date_of_availability' => Carbon::create('2021', '12', '01'),
+            'time_of_availability' => Carbon::createFromTime('15','00','00'),
+
+        ]);
+        DB::table('available_dates')->insert([
+            'therapist_id' => '11',
+            'date_of_availability' => Carbon::create('2021', '12', '01'),
+            'time_of_availability' => Carbon::createFromTime('16','00','00'),
+
+        ]);
+        DB::table('available_dates')->insert([
+            'therapist_id' => '11',
+            'date_of_availability' => Carbon::create('2021', '12', '01'),
+            'time_of_availability' => Carbon::createFromTime('17','00','00'),
+
+        ]);
+        DB::table('available_dates')->insert([
+            'therapist_id' => '11',
+            'date_of_availability' => Carbon::create('2021', '12', '01'),
+            'time_of_availability' => Carbon::createFromTime('18','00','00'),
+
+        ]);
+        DB::table('available_dates')->insert([
+            'therapist_id' => '11',
+            'date_of_availability' => Carbon::create('2021', '12', '01'),
+            'time_of_availability' => Carbon::createFromTime('19','00','00'),
+
+        ]);
+        DB::table('available_dates')->insert([
+            'therapist_id' => '11',
+            'date_of_availability' => Carbon::create('2021', '12', '01'),
+            'time_of_availability' => Carbon::createFromTime('20','00','00'),
+
+        ]);
+
+
+
 
 
 

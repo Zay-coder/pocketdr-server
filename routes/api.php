@@ -25,6 +25,9 @@ Route::get('couple_therapists', [TherapistController::class, 'couple_therapists'
 Route::get('get_chosen_therapist/{x}', [TherapistController::class, 'get_chosen_therapist']);
 Route::get('upvote/{x}', [TherapistController::class, 'upvote']);
 Route::get('downvote/{x}', [TherapistController::class, 'downvote']);
+Route::get('get_available_dates/{x}', [TherapistController::class, 'get_available_dates']);
+
+
 
 
 
@@ -32,6 +35,8 @@ Route::get('downvote/{x}', [TherapistController::class, 'downvote']);
 Route::group(['middleware' => ['jwt.verify']], function() {
     Route::get('logout', [ApiController::class, 'logout']);
     Route::get('get_user', [ApiController::class, 'get_user']);
+    Route::get('get_user_appointments', [ApiController::class, 'get_user_appointments']);
+
 
 
 });

@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use Illuminate\Support\Facades\DB;
 use Tymon\JWTAuth\Facades\JWTAuth;
 use App\Models\User;
 use App\Models\Challenge;
@@ -133,5 +134,28 @@ class ApiController extends Controller
         dd($data);
 
     }
+
+    public function get_user_appointments() {
+        $logged_in_user = JWTAuth::user()->id;
+
+        $data = DB::table("appointments")
+            ->select("date_of_appointment", "time_of_appointment")
+            ->where("user_id", "=", $logged_in_user)
+            ->get();
+
+        return $data;
+
+
+    }
+
+    public function get_loggedin_user() {
+        $user = auth()->user();
+
+
+        return $user;
+
+
+    }
+
 
 }
