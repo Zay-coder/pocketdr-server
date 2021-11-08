@@ -16,17 +16,18 @@ class CreateAppointmentsTable extends Migration
 
         Schema::create('available_dates', function (Blueprint $table) {
             $table->id();
-            $table->foreignId('therapist_id')->references('id')->on('therapists');
+            $table->integer('therapist_id');
             $table->date('date_of_availability');
             $table->time('time_of_availability');
+            $table->tinyInteger('status')->default(0);
             $table->timestamps();
         });
         Schema::create('appointments', function (Blueprint $table) {
             $table->id();
-            $table->foreignId('user_id')->references('id')->on('users');
-            $table->foreignId('therapist_id')->references('id')->on('therapists');
+            $table->integer('user_id');
+            $table->integer('therapist_id');
             $table->date('date_of_appointment');
-            $table->foreignId('time_of_appointment')->references('time_of_availability')->on('available_dates');
+            $table->time('time_of_appointment');
             $table->timestamps();
         });
 

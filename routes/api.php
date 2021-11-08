@@ -12,6 +12,7 @@ use Illuminate\Support\Facades\Route;
 Route::post('login', [ApiController::class, 'login']);
 Route::post('register', [ApiController::class, 'register']);
 
+
 //challenges routes
 Route::get('adult_challenges', [ChallengeController::class, 'adult_challenges']);
 Route::get('teen_challenges', [ChallengeController::class, 'teen_challenges']);
@@ -26,6 +27,9 @@ Route::get('get_chosen_therapist/{x}', [TherapistController::class, 'get_chosen_
 Route::get('upvote/{x}', [TherapistController::class, 'upvote']);
 Route::get('downvote/{x}', [TherapistController::class, 'downvote']);
 Route::get('get_available_dates/{x}', [TherapistController::class, 'get_available_dates']);
+Route::post('sendAppointment', [TherapistController::class, 'sendAppointment']);
+
+
 
 
 
@@ -35,7 +39,9 @@ Route::get('get_available_dates/{x}', [TherapistController::class, 'get_availabl
 Route::group(['middleware' => ['jwt.verify']], function() {
     Route::get('logout', [ApiController::class, 'logout']);
     Route::get('get_user', [ApiController::class, 'get_user']);
-    Route::get('get_user_appointments', [ApiController::class, 'get_user_appointments']);
+
+
+
 
 
 

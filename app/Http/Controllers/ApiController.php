@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\Appointment;
 use Illuminate\Support\Facades\DB;
 use Tymon\JWTAuth\Facades\JWTAuth;
 use App\Models\User;
@@ -148,14 +149,9 @@ class ApiController extends Controller
 
     }
 
-    public function get_loggedin_user() {
-        $user = auth()->user();
 
 
-        return $user;
 
-
-    }
 
 
 }

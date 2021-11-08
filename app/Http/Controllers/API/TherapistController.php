@@ -3,7 +3,10 @@
 namespace App\Http\Controllers\API;
 
 use App\Http\Controllers\Controller;
+use App\Models\Appointment;
+use App\Models\Date;
 use App\Models\Therapist;
+use Carbon\Carbon;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\DB;
 use Illuminate\Support\Str;
@@ -78,11 +81,31 @@ class TherapistController extends Controller
     public function get_available_dates($therapist_id) {
 
         $data = DB::table("available_dates")
-            ->select("date_of_availability", "time_of_availability")
-            ->where("therapist_id", "=", $therapist_id)
+            ->select("id","date_of_availability", "time_of_availability")
+            ->where([["therapist_id", "=", $therapist_id],["status", "=", 0]])
             ->get();
 
         return $data;
+
+    }
+
+    public function sendAppointment(Request $request) {
+        Appointment::insert([
+            'user_id' => $request->user_id,
+            'therapist_id' => $request->therapist_id,
+            'date_of_appointment' =>  $request->date_of_appointment,
+            'time_of_appointment' =>  $request->time_of_appointment,
+            'created_at' => Carbon::now()->format('Y-m-d H:i:s')
+        ]);
+        $available_dates = Date::find($request->appointment_id);
+        $available_dates->status=1;
+        $available_dates->save();
+
+        return response()->json([
+            'status' => true,
+            'message' => 'Appointment successfully booked',
+        ], 201);
+
 
     }
 
